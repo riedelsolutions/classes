@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Eventos</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		function insideDiv(){
+			document.getElementById("esteDiv").innerHTML = "Funciona!";
+		}
+
+		function hover(){
+			document.getElementById("textoHover").innerHTML = "Texto al pasar el mouse";
+		}
+
+		function original(){
+			document.getElementById("textoHover").innerHTML = "Texto original";
+		}
+	</script>
+	
+
+	<button onclick = "this.innerHTML = Date();">Fecha y hora</button><br><br><br>
+	<button onclick = "insideDiv();">Activar la función</button><br><br><br>
+	<div id= "esteDiv"></div>
+	<br><br><br>
+	<div id = "textoHover" onmouseover= "hover();" onmouseout = "original();">Texto original.</div>
+
+</body>
+</html>

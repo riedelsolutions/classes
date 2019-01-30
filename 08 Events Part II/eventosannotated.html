@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos</title>
+</head>
+<body>
+  <button onclick = "sumarHijo();">Append</button>
+  <p>Texto original.</p>
+  <div id = "esteDiv"></div>
+  <!--Quiero agregar algo acá abajo-->
+  
+  
+  <script>
+    /*Crear un elemento, en este caso un parrafo.
+     * Después le tenemos que agregar texto adentro.
+     * Una vez que eso esté creado y armado, lo que vamos a hacer es una funcion que lo agregue al DOM.
+     * */
+    
+  	
+    //appendChild
+  	/*parrafo
+  	 * 		textNode
+  	 * */
+    
+    parrafo.appendChild(nodo);
+    
+    function sumarHijo(){
+
+    	var parrafo = document.createElement("p");  //el elemento que creas lo haces con el mismo tag usado en html (p para parrafo, tr para table row, div para div, etc)
+    
+    var nodo = document.createTextNode("Este texto fue agregado por un evento. <br> <br>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?");
+
+    parrafo.appendChild(nodo);
+      document.getElementById("esteDiv").appendChild(parrafo);
+    }
+  
+  </script>
+  
+</body>
+</html>
+  
