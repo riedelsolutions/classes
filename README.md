@@ -1,2 +1,2 @@
-# classes
-JS lessons for my students (in Spanish).
+# Class Materials
+JS lessons and materials for my students (in Spanish).
