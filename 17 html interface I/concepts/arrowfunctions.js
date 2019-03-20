@@ -14,22 +14,11 @@ arrow();
 function getInfo(){
 	var name = "Ale";
 
-	var returnInfo = () => name;
+	var returnInfo = () => {console.log(name)};
 	//usa el this del scope en el que vive, en este caso, de getInfo. Comparte su this con
 	//getInfo
 
-	return returnInfo();
+	returnInfo();
 }
 
 getInfo();
-
-
-function getInfo2(){
-	this.name = "Ale";
-
-	var returnInfo = () => this.name + " is your name!";
-
-	return returnInfo();
-}
-
-getInfo2();
