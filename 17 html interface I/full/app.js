@@ -34,6 +34,7 @@ function getInfo(){
 	}
 
 	}catch(e){
-		console.log("Persona no encontrada");
+		//console.log("Persona no encontrada");
+		document.getElementById("results").innerHTML = "Persona no encontrada."
 	}
 }

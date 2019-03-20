@@ -51,7 +51,6 @@ function getInfo(){
 			break;
 		}
 	}
-
 	}catch(e){
 		console.log("Persona no encontrada");
 	}
