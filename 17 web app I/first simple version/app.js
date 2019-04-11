@@ -19,7 +19,7 @@ var people = [
 //console.log(people[1].id);
 
 function getInfoPreeliminar(num){
-
+//un for loop, que tenga una variable i que incremente mientras i sea menor o igual al largo del array people
 	//Hay formas mucho más prolijas y rápidas de hacer esto. Lo vamos a ver la próxima.
 	for (var i = 0; i <= people.length; i++){
 		if(people[i].id === num){
